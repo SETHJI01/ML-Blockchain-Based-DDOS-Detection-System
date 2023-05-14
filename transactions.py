@@ -38,3 +38,7 @@ def addData(ip_address, timestamp):
 
 def checkData(ip_address):
     return blacklist_storage.functions.checkData(ip_address).call()
+
+
+def getIP():
+    return blacklist_storage.functions.getIPs().call()

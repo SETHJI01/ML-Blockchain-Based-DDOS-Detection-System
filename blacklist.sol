@@ -8,6 +8,7 @@ contract dataDeployment {
 
     function addData(string memory IPAddress,string memory TimeStamp) public{
         Users[IPAddress] = TimeStamp;
+        blackListIPAddress.push(IPAddress);
     }
 
     //Returns Empty String is case of the IP Address being absent
